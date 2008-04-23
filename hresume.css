@@ -1,0 +1,69 @@
+/*.hresume {
+    width: 100%;
+    padding: 10px;
+}
+
+.hresume abbr {
+    border: none;
+}
+
+.hresume address {
+    font-style: normal;
+}
+
+.hresume hr {
+    display: block;
+}
+
+.hresume .contact .fn {
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+.hresume h2 {
+    font-size: 12pt;
+    padding: 0 0 5px 0;
+    margin: 0;
+}
+
+.hresume .education, .hresume .accreditation {
+    margin: 10px 0 10px 20px;
+    padding: 1px;
+}
+
+.hresume .experience {
+    margin: 10px 0 30px 20px;
+    padding: 1px;
+}
+
+.hresume .summary, .hresume .tags {
+    margin: 10px 0 20px 20px;
+    padding: 1px;
+}
+
+.hresume .education .htitle, .hresume .experience .htitle {
+    float: left;
+}
+
+.hresume .htitle .include {
+    display: none;
+}
+
+.hresume .education .date_duration, .hresume .experience .date_duration {
+    float: right;
+    font-size: smaller;
+}
+
+.hresume .education .summary {
+    margin: 0;
+}
+
+.hresume .tags ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hresume .tags ul li {
+    display: inline;
+}*/
