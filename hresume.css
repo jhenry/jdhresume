@@ -4,7 +4,7 @@ body {font-family: garamond, "Palatino", times, serif; font-size: 14px;}
 .right {float: right;}
 
 .contact h1, .contact p.center {text-align:center; clear:both;}
-.contact a {text-decoration: none; color: #000;}
+.contact a, .action-strip a {text-decoration: none; color: #000;}
 .door-phone {border-top: 1px solid #000;}
 
 .education ul, .experience ul {clear:both;}
@@ -22,3 +22,7 @@ ul li {list-style-type: disc; list-style-position: inside; padding-left: 1em;}
 .tags {margin: 2em 0 0 0;}
 
 .footer {display: none; visibility: hidden;}
+
+.action-strip {border-bottom: 1px solid #999; background-color: #DAECFF; padding: .8em;}
+.action-strip ul li {display:inline;}
+.action-strip ul li img {vertical-align: middle;}
