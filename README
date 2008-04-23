@@ -7,8 +7,17 @@ http://jdhenry.com/resume
 Icons courtesy of Brand Spanking New:
 http://www.brandspankingnew.net/archive/2006/12/hohoho.html
 
-The resume is marked up using the hResume draft specification:
+The resumé is marked up using the hResume draft specification:
 http://microformats.org/wiki/hresume
 
 Layout and other CSS wizardry employs the wonderful YUI Grids CSS: 
 http://developer.yahoo.com/yui/grids/
+
+
+Housekeeping:
+----------------------------------
+TODO: Clean up and organize CSS
+TODO: Set up license info 
+TODO: Revisit action strip aesthetics
+TODO: Look at linking rel tags in tag section
+TODO: Documentation and reuse examples
