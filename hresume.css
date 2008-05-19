@@ -1,4 +1,4 @@
-body { font-family: garamond, "Palatino", times, serif; font-size: 14px; }
+body { font-family: garamond, "Palatino", times, serif; font-size: 14px; background-color: #FFFFFF;}
 #doc3 { margin:0; }
 
 .left {float: left;}
@@ -30,6 +30,9 @@ ul li {list-style-type: disc; list-style-position: inside; padding-left: 1em;}
 .action-strip ul li img {vertical-align: middle;}
 
 .action-strip .documentation {text-align: right; padding-right: 1em;}
+
+.about-slidedown { display: none; padding: 2em; border-bottom: 1px solid #999; background-color: #FFFFFF;}
+.about-slidedown p { margin-bottom: 1em;}
 
 #hd, #bd { width: 800px; margin: auto;}
 #hd {margin-top: 2em;}
