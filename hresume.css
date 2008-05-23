@@ -4,15 +4,17 @@ body { font-family: garamond, "Palatino", times, serif; font-size: 14px; backgro
 .left {float: left;}
 .right {float: right;}
 
+h1 { font-size: 2em;}
+h2 { font-size: 1.8em; border-bottom: 1px solid #000;}
+h3 { font-size: 1.4em;  text-transform: uppercase;}
+h4 { font-size: 1.4em; font-weight: bold; margin-bottom: .5em; }
+
 .contact h1, .contact p.center {text-align:center; clear:both;}
 .contact a, .action-strip a {text-decoration: none; color: #000;}
 .door-phone {border-top: 1px solid #000;}
 
 .education ul, .experience ul {clear:both;}
 
-h1 { font-size: 2em;}
-h2 { font-size: 1.8em; border-bottom: 1px solid #000;}
-h3 { font-size: 1.4em;  text-transform: uppercase;}
 .experience .title, .education .summary {font-weight: bold;}
 .date_duration {font-style: italic;}
 
@@ -22,8 +24,8 @@ ul li {list-style-type: disc; list-style-position: inside; padding-left: 1em;}
 .tags ul li {list-style-type:none;}
 .tags {margin: 2em 0 0 0;}
 
-.footer {display: none; visibility: hidden;}
-
+#about-copy {display: none; visibility: hidden;}
+.footer p.references {font-style: italic; text-align: center; margin: 2.5em 0 1em 0;}
 
 .action-strip {border-bottom: 1px solid #999; background-color: #fff; padding: .5em; }
 .action-strip ul li {display:inline;}
@@ -31,10 +33,14 @@ ul li {list-style-type: disc; list-style-position: inside; padding-left: 1em;}
 
 .action-strip .documentation {text-align: right; padding-right: 1em;}
 
-.about-slidedown { display: none; padding: 2em; border-bottom: 1px solid #999; background-color: #FFFFFF;}
-.about-slidedown p { margin-bottom: 1em;}
+.about-slidedown { display: none; padding: 2em; border-bottom: 1px solid #999; background-color: #FFFFFF; }
+.about-slidedown p { margin-bottom: 1em; }
+.about-slidedown p.close {text-align: center; margin-top: 1em;}
+a.close-button {color:#000; text-decoration: none;}
 
-#hd, #bd { width: 800px; margin: auto;}
+.about-container ul li {text-indent: -1em; margin-left: 2em;}
+
+#hd, #bd, .about-container { width: 800px; margin: auto;}
 #hd {margin-top: 2em;}
 
 
