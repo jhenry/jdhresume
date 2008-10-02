@@ -1,37 +1,44 @@
 
 $(document).ready(function() {
-
-    // on clicking the about link,
-    // insert a dom element after the action-strip, give it a class name of about-slidedown
-    // put the contents of about-copy into about-slidedown
-    // toggle about-slidedown's visibility, with a slide down effect
-    // TODO: clean this up
-    // TODO: put a fade on the bg color
-    $('.documentation a.toggle-about-box').toggle(function() {
-          return show_about_box();
-    }, function() {
-        return close_about_box();
-    });
     
+    // Set up events for the about-link.
+    $('.documentation a.toggle-about-box').toggle(function() {
+        open_about_box();
+    }, function() {
+        exit_about_box();
+    });
 });
 
-function show_about_box () {
-    $('.about-slidedown').remove();
-    $("<div>").addClass('about-slidedown').insertAfter('.action-strip').hide();
-
-    $('.about-slidedown').html($('#about-copy').html()).slideDown();
-    $('body').css('background-color', '#cfcfcf');
+// Insert a hidden dom element after the action-strip.
+// Put the contents of #about-copy into #about-slidedown.
+// Show #about-slidedown, with a slide down effect.
+function open_about_box () {
+    $('<div id="about-slidedown">').insertAfter('.action-strip').hide();
+    $('#about-slidedown').html($('#about-copy').html()).slideDown({duration: "fast", complete: cleanup_slidedown});
     
-    $('.close-button,#hd,#bd').click(function() {
-        $('.documentation a.toggle-about-box').trigger("click"); 
-        $('.close-button,#hd,#bd').unbind('click'); // no open/close after the window is closed.
-        return false;
-    });
-    return false;
 }
 
-function close_about_box () {
-    $('.about-slidedown').slideUp();
-    $('body').css('background-color', '#ffffff');
-    return false
+// Hide #about-slidedown, with a slide up effect.
+function exit_about_box () {
+    $('#about-slidedown').slideUp({duration: "fast", complete: cleanup_slideup});
 }
+
+// Fade body background into grey.
+// Bind click events for closing about box.
+function cleanup_slidedown () {
+    $('body').animate({ backgroundColor: "#cfcfcf" }, "fast");
+    $('#return a, #hd, #bd').click(function() {
+          $('.documentation a.toggle-about-box').trigger("click"); 
+          return false;
+      });
+}
+
+// Fade body background back to white.
+// Unbind click events for closing about box.
+function cleanup_slideup () {
+    $('body').animate({ backgroundColor: "#ffffff" }, "fast");
+    $('#about-slidedown').remove();
+    $('#return a,#hd,#bd').unbind('click');
+}
+
+

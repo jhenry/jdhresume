@@ -18,6 +18,6 @@ Housekeeping:
 ----------------------------------
 TODO: Clean up and organize CSS
 TODO: Set up license info 
-TODO: Revisit action strip aesthetics
-TODO: Look at linking rel tags in tag section
+TODO: Consider linking rel tags in tag section
 TODO: Documentation and reuse examples
+TODO: Bind/unbind doc3 to close about box

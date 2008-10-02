@@ -33,9 +33,9 @@ ul li {list-style-type: disc; list-style-position: inside; padding-left: 1em;}
 
 .action-strip .documentation {text-align: right; padding-right: 1em;}
 
-.about-slidedown { display: none; padding: 2em; border-bottom: 1px solid #999; background-color: #FFFFFF; }
-.about-slidedown p { margin-bottom: 1em; }
-.about-slidedown p.close {text-align: center; margin-top: 1em;}
+#about-slidedown { display: none; padding: 2em; border-bottom: 1px solid #999; background-color: #FFFFFF; }
+#about-slidedown p { margin-bottom: 1em; }
+#about-slidedown p.close {text-align: center; margin-top: 1em;}
 a.close-button {color:#000; text-decoration: none;}
 
 .about-container ul li {text-indent: -1em; margin-left: 2em;}
